@@ -1,0 +1,142 @@
+.home__hero {
+  background-image: url("../../../public/assets/home/background-home-mobile.jpg");
+}
+
+.hero__content__container {
+  margin: 3rem 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.hero__text {
+  text-align: center;
+}
+
+.hero__heading {
+  text-transform: uppercase;
+}
+
+.hero__explore {
+  padding: 1rem;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  outline: 2px solid var(--Text-color);
+  outline-offset: 0;
+  background-color: var(--Clr-white);
+  transition: 0.3s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  animation: expand-circle 2s ease-in-out infinite;
+}
+
+@keyframes expand-circle {
+  25% {
+    outline-offset: 0.5rem;
+  }
+
+  50% {
+    outline-offset: 1rem;
+  }
+
+  75% {
+    outline-offset: 0.5rem;
+  }
+
+  100% {
+    outline-offset: 0;
+  }
+}
+
+.hero__explore:hover {
+  filter: opacity(0.7);
+  transform: scale(1.1);
+}
+
+.hero__explore p {
+  color: var(--Dark-text);
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 1.25px;
+}
+
+/* tablet screen style */
+@media screen and (min-width: 41.25rem) {
+  .home__hero {
+    background-image: url("../../../public/assets/home/background-home-tablet.jpg");
+    padding: 10.5rem 1rem;
+  }
+
+  .hero__text {
+    max-width: 28.13rem;
+    margin: 0 auto;
+  }
+
+  .hero__heading {
+    margin-block: 1rem;
+  }
+}
+
+/*desktop screen style*/
+@media screen and (min-width: 60rem) {
+  .home__hero {
+    background-image: url("../../../public/assets/home/background-home-desktop.jpg");
+    padding: 8.5rem 1rem;
+  }
+
+  .hero__text {
+    text-align: left;
+  }
+
+  .home__hero .wrapper {
+    position: relative;
+  }
+
+  .hero__content__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+
+  .hero__content__container > div {
+    align-self: self-end;
+  }
+
+  .hero__heading {
+    margin: 2rem 0 2.5rem 0;
+  }
+}

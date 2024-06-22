@@ -1,0 +1,215 @@
+.technology {
+  background-image: url("../../../public/assets/technology/background-technology-mobile.jpg");
+}
+
+/* technology right */
+
+.technology .wrapper {
+  padding: 0;
+}
+
+.img__container {
+  height: 15.63rem;
+
+  -webkit-animation: roll-in-blurred-right 0.65s cubic-bezier(0.23, 1, 0.32, 1)
+    both;
+  animation: roll-in-blurred-right 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+@-webkit-keyframes roll-in-blurred-right {
+  0% {
+    -webkit-transform: translateX(1000px) rotate(720deg);
+    transform: translateX(1000px) rotate(720deg);
+    -webkit-filter: blur(50px);
+    filter: blur(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes roll-in-blurred-right {
+  0% {
+    -webkit-transform: translateX(1000px) rotate(720deg);
+    transform: translateX(1000px) rotate(720deg);
+    -webkit-filter: blur(50px);
+    filter: blur(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.img__container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* technology left */
+.technology__left {
+  padding: 2rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes tilt-in-fwd-tr {
+  0% {
+    -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px)
+      skew(-35deg, 10deg);
+    transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px)
+      skew(-35deg, 10deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    opacity: 1;
+  }
+}
+@keyframes tilt-in-fwd-tr {
+  0% {
+    -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px)
+      skew(-35deg, 10deg);
+    transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px)
+      skew(-35deg, 10deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    opacity: 1;
+  }
+}
+
+.technology__btns__container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.tech__btn {
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 50%;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  border: 1px solid var(--Clr-white);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  color: var(--Dark-text);
+  background-color: var(--Clr-white);
+  opacity: 1;
+}
+
+.technology__desc {
+  padding: 1rem 0;
+}
+
+.tech__into {
+  font-family: Barlow Condensed;
+  font-size: 0.875rem;
+  line-height: 1.06rem;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.technology__desc h3 {
+  text-transform: uppercase;
+  margin-block: 1rem;
+}
+
+@media screen and (min-width: 41.25rem) {
+  .technology {
+    background-image: url("../../../public/assets/technology/background-technology-tablet.jpg");
+  }
+
+  .technology .intro_text {
+    padding: 0 2rem;
+  }
+  .img__container {
+    height: 20.63rem;
+  }
+
+  .technology__desc {
+    width: 400px;
+  }
+
+  .tech__intro {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .technology {
+    background-image: url("../../../public/assets/technology/background-technology-desktop.jpg");
+  }
+
+  .technology .wrapper {
+    padding: 0 0 0 3rem;
+  }
+
+  .technology__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 5rem;
+    padding-block: 1rem;
+  }
+
+  .technology__right {
+    flex: 0.5;
+  }
+
+  .img__container {
+    height: 32.9rem;
+    width: 100%;
+  }
+
+  /*  technology left */
+  .technology__left {
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+    gap: 3rem;
+    flex: 0.5;
+  }
+
+  .technology__btns__container {
+    flex-direction: column;
+  }
+
+  .tech__btn {
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
+
+  .technology__desc {
+    text-align: left;
+    width: 100%;
+  }
+}

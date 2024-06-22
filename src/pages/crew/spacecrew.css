@@ -1,0 +1,15 @@
+.crew {
+  background-image: url("../../../public/assets/crew/background-crew-mobile.jpg");
+}
+
+@media screen and (min-width: 41.25rem) {
+  .crew {
+    background-image: url("../../../public/assets/crew/background-crew-tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 65.62rem) {
+  .crew {
+    background-image: url("../../../public/assets/crew/background-crew-desktop.jpg");
+  }
+}

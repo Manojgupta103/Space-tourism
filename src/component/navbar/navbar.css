@@ -1,0 +1,172 @@
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  overflow-x: hidden;
+}
+
+.nav__logo img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.nav__line {
+  display: none;
+}
+
+.nav__right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+  padding: 1.5rem;
+  transform: translate(100%);
+  transition: 0.5s;
+  z-index: 999;
+}
+
+.nav__right.show {
+  transform: translate(0);
+}
+
+.nav__close__btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  padding: 0.3rem;
+}
+
+.links {
+  margin-top: 5rem;
+  list-style-type: none;
+}
+
+.links li {
+  margin-block: 1rem;
+}
+
+.links li a {
+  padding: 0.5rem;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--Clr-white);
+}
+
+.nav__link__num {
+  font-weight: 700;
+  margin-right: 0.3rem;
+}
+
+/* tablets screen style */
+@media screen and (min-width: 41.25rem) {
+  nav {
+    padding: 0;
+  }
+
+  nav .wrapper {
+    padding-right: 0;
+    position: relative;
+  }
+
+  .nav__center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 1.5rem;
+  }
+
+  /* nav__left */
+  .nav__hamburger__btn {
+    display: none;
+  }
+
+  /* nav__left */
+  .nav__right {
+    display: flex;
+    align-items: center;
+    position: static;
+    width: auto;
+    height: auto;
+    transform: translate(0);
+    padding: 0 0.5rem;
+  }
+
+  .nav__close__btn {
+    display: none;
+  }
+
+  .links {
+    margin-top: 0;
+    display: flex;
+  }
+
+  .links li {
+    margin: 0;
+  }
+
+  .links li a {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    padding: 1.7rem 0;
+    margin-inline: 0.7rem;
+  }
+
+  .nav__link__num {
+    display: none;
+  }
+
+  .links li a.nav__active {
+    border-bottom: 3px solid var(--Clr-white);
+  }
+}
+
+/* desktop screen size */
+@media screen and (min-width: 60rem) {
+  .nav__center {
+    padding-left: 2rem;
+  }
+
+  .nav__right {
+    flex: 0.6;
+    justify-content: center;
+  }
+
+  .links li a {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    margin: 0 1rem;
+    display: flex;
+  }
+
+  .nav__link__num {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1295px) {
+  .nav__line {
+    display: block;
+    position: absolute;
+    width: 35%;
+    height: 1px;
+    left: 9.37rem;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    background: var(--Clr-white);
+    z-index: 1;
+  }
+}

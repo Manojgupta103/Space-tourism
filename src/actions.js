@@ -1,0 +1,3 @@
+export const TOGGLE_MOBILE_MENU = "TOGGLE_MOBILE_MENU";
+export const CLOSE_MOBILE_MENU = "CLOSE_MOBILE_MENU";
+export const SPACE_INFO = "SPACE_INFO";

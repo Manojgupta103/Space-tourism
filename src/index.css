@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Clr-white: rgba(255, 255, 255, 1);
+  --Dark-gray: rgba(208, 214, 249, 1);
+  --Text-color: rgb(208, 214, 249);
+  --Dark-text: rgba(11, 13, 23, 1);
+  --Light-gray: rgb(56, 59, 75);
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  overflow-x: hidden;
+  color: var(--Clr-white);
+}
+
+h1 {
+  /* space */
+  font-size: 5rem;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  line-height: 6.25rem;
+  color: var(--Clr-white);
+}
+
+h2 {
+  font-family: "Bellefair", serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 4rem;
+  color: var(--Clr-white);
+}
+
+h3 {
+  font-family: "Bellefair", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+
+h4 {
+  font-family: Barlow Condensed;
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 1.06rem;
+  letter-spacing: 0.15rem;
+  color: var(--Text-color);
+}
+
+p {
+  color: var(--Text-color);
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 0.93rem;
+  font-weight: 400;
+  line-height: 1.56rem;
+}
+
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.wrapper {
+  max-width: 94.3rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.intro_text {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--Dark-gray);
+}
+
+.intro_num {
+  color: var(--Dark-);
+  text-transform: uppercase;
+  margin-left: 0.3rem;
+  color: var(--Text-color);
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+section,
+.home__hero {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% 100%;
+  padding: 7rem 0 2rem;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 41.25rem) {
+  .wrapper {
+    padding: 0 2.5rem;
+  }
+
+  h1 {
+    /* space */
+    font-size: 9.37rem;
+    line-height: 9.38rem;
+  }
+
+  h2 {
+    /* moon */
+    font-size: 5rem;
+    line-height: 5.75rem;
+  }
+
+  h3 {
+    /* lunch vehicle */
+    font-size: 2.5rem;
+    line-height: 2.88rem;
+  }
+
+  h4 {
+    /* avg distance */
+    font-size: 0.875rem;
+    line-height: 1.06rem;
+    letter-spacing: 0.147rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+
+  .intro_text {
+    text-align: left;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .wrapper {
+    padding: 0 3rem;
+  }
+
+  h1 {
+    /* space */
+    font-size: 9.38rem;
+    line-height: 10.75rem;
+  }
+
+  h2 {
+    /* moon */
+    font-size: 5rem;
+    line-height: 5.75rem;
+  }
+
+  h3 {
+    /* lunch vehicle */
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+
+  h4 {
+    /* avg distance */
+    font-size: 0.875rem;
+    line-height: 1.06rem;
+    letter-spacing: 0.15rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
+}
